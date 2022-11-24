@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.block {
+    background: #8c8c8c;
+    font-size: small;
+    height: 45px;
+    margin: 3px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+
+@for $i from 1 to 11 {
+    .col-#{$i} {
+        color: darken(rgb(253, 1, 1), $i*2%);
+    }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss"
